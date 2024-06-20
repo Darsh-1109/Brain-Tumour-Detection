@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumour Detection</title>
+</head>
+<body>
+<form method="post" action="/">
+    <input type="range" id="parameter1" name="parameter1" min="0" max="10" value="5">
+    <label for="parameter1">Headaches</label>
+    <br>
+    <br>
+    <input type="range" id="parameter2" name="parameter2" min="0" max="10" value="5">
+    <label for="parameter2">Seizures/Convulsions</label>
+    <br>
+    <br>
+    <input type="range" id="parameter3" name="parameter3" min="0" max="10" value="5">
+    <label for="parameter3">Nausea/Vomiting</label>
+    <br>
+    <br>
+    <input type="range" id="parameter4" name="parameter4" min="0" max="10" value="5">
+    <label for="parameter4">Difficulty Speaking/Finding Words</label>
+    <br>
+    <br>
+    <input type="range" id="parameter5" name="parameter5" min="0" max="10" value="5">
+    <label for="parameter5">Vision Loss/Blurry Vision</label>
+    <br>
+    <br>
+    <input type="range" id="parameter6" name="parameter6" min="0" max="10" value="5">
+    <label for="parameter6">Loss Of Balance/Dizziness</label>
+    <br>
+    <br>
+    <input type="range" id="parameter7" name="parameter7" min="0" max="10" value="5">
+    <label for="parameter7">Weakness</label>
+    <br>
+    <br>
+    <input type="range" id="parameter8" name="parameter8" min="0" max="10" value="5">
+    <label for="parameter8">Confusion/Disorientation</label>
+    <br>
+    <br>
+    <input type="range" id="parameter9" name="parameter9" min="0" max="10" value="5">
+    <label for="parameter9">Facial Numbness/Tingling</label>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+{% if result %}
+    <p>Result: {{ result }}</p>
+{% endif %}
+</body>
+</html>
